@@ -4,6 +4,7 @@ import Header from './Header'
 function Tabs() {
   return (
     <div><Header/></div>
+  
   )
 }
 

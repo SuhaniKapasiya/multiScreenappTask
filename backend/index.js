@@ -5,6 +5,10 @@ const database = require('./config/database');
 
 const carousalRoutes = require('./routes/carousalRoutes');
 const chartRoutes = require('./routes/chartRoutes');
+const productRoute = require('./routes/productRoute');
+
+
+
 require("dotenv").config();
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -23,6 +27,7 @@ app.use(express.json());
 
 app.use("/api/carousals", carousalRoutes);
 app.use("/api/charts", chartRoutes);
+app.use("/api/products", productRoute);
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
