@@ -36,6 +36,12 @@ const BottomNav = () => {
             Button
           </Link>
         </li>
+
+        <li>
+          <Link to="/table" className="text-gray-700 hover:text-gray-900">
+            Table
+          </Link>
+        </li>
       </ul>
     </nav>
   );

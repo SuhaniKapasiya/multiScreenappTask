@@ -26,5 +26,18 @@ const getCharts = async () => {
 }
 
 
+const getProduct = async() =>{
+    try{
+       const { data } = await API.get("/products/getProduct");
+       console.log("data of hanlde api",data);
+       
+       return data;
 
-export { getCarousals, getCharts };
+    }catch(error){
+       console.log(error);
+       
+    }
+}
+
+
+export { getCarousals, getCharts, getProduct };

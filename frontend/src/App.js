@@ -10,6 +10,7 @@ import Tabs from "./components/Tabs";
 import Home from "./pages/Home";
 import Aboutus from "./pages/Aboutus";
 import PopupButton from './components/PopupButton ';
+import Table from "./components/Table";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           path="/button"
           element={<PopupButton buttonText={"button"} popupContent ={"I Love Mom"}/>}
         />
+        <Route path="/table" element = {<Table/>} />
       </Routes>
       <BottomNav />
     </div>
